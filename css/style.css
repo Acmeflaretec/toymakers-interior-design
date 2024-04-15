@@ -187,7 +187,7 @@ ul, li {
 	background-color: rgba(0, 0, 0, 1);
 	position: absolute;
 	top: 0;
-	z-index: -1;
+	z-index: 1;
 	height: 100vh;
 	-webkit-transition: left .5s .5s;
 	-moz-transition: left .5s .5s;
@@ -281,13 +281,12 @@ ul, li {
 	display: table;
 	width: 100%;
 	height: 100vh;
-	background: url(../images/b3.jpg) 0 0 / cover;
+	background: url(../images/coverphoto.jpg) 0 0 / cover;
 	background-attachment: fixed;
 	/* background-size: cover; */
 }
 #HeroBanner .hero-content {
 	display: table-cell;
-	background-color: rgba(10,40,60,0.7);
 	text-align: center;
 	vertical-align: middle;
 	padding: 0 15px;
@@ -470,6 +469,8 @@ ul, li {
 	width: 50%;
 	height: 100%;
 }
+
+
 /* Testimonial section style goes here */
 #Testimonial {
 	width: 100%;
@@ -671,4 +672,255 @@ ul, li {
 }
 
 
+/* 
+#back-to-top-btn {
+	display: none; 
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #007bff;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	z-index: 1000;
+} */
 
+#scroll-to-top {
+	display: none; /* Initially hide the button */
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	background-color: #17a2b8;
+	color: #fff;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 50px;
+	font-size: 24px;
+	cursor: pointer;
+	z-index: 1000;
+}
+#whatsapp-icon{
+	display: none;
+	position: fixed;
+	bottom: 80px;
+	right: 20px;
+	width: 60px;
+	height: 60px;
+}
+
+#heder1{
+	background: rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease-in-out;
+	/* position: fixed;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    z-index: 9;
+}
+
+#heder1.header-fixed .site-logo-wrap .logo img {
+	width: 70px;
+	transition: all 0.3s ease-in-out;
+}
+#heder1.header-fixed .main-menu {
+	padding: 15px 0;
+	transition: all 0.3s ease-in-out;
+}
+#heder1.header-fixed .main-menu li a {
+	padding: 5px 10px;
+	transition: all 0.3s ease-in-out;
+}
+#heder1.header-fixed a.menu-trigger {
+	top: 15px;
+	transition: all 0.3s ease-in-out;
+}
+#heder1 .site-logo-wrap {
+	width: 30%;
+	float: left;
+	padding:0;
+	transition: all 0.3s ease-in-out;
+}
+#heder1 .site-logo-wrap .logo {
+	color: #fff;
+	font-size: 24px;
+	font-style: italic;
+	display: inline-block;
+}
+#heder1 .site-logo-wrap .logo img {
+	display: inline-block;
+	vertical-align: middle;
+	width: 80px;
+}
+#heder1 .main-menu {
+	width: 70%;
+	text-align: right;
+	float: right;
+	padding: 13px 0;
+	transition: all 0.3s ease-in-out;
+}
+#heder1 .main-menu li {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+#heder1 .main-menu li a {
+	position: relative;
+	font-size: 16px;
+	color: #fff;
+	padding: 15px 10px;
+}
+#heder1 .main-menu li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0098aa;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+#heder1 .main-menu li a:hover::before, #Header .main-menu li a.active::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/* mobile menu style*/
+#heder1 .mobile-menu {
+	width: 180px;
+	left: -180px;
+	background-color: rgba(0, 0, 0, 1);
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	height: 100vh;
+	-webkit-transition: left .5s .5s;
+	-moz-transition: left .5s .5s;
+	transition: left .5s .5s;
+}
+#heder1 .mobile-menu.visible {
+	left: 0;
+	-webkit-transition: left .5s;
+	-moz-transition: left .5s;
+	transition: left .5s;
+}
+#heder1 .mobile-menu ul {
+	margin-top: 85px;
+}
+#heder1 .mobile-menu ul li {
+	list-style: none;
+	padding: 0 0 20px 40px;
+}
+#heder1 .mobile-menu ul li a {
+	font-size: 16px;
+	color: #fff;
+	padding: 0;
+}
+/* menu toggler style */
+#heder1 a.menu-trigger {
+  cursor: pointer;
+  position: relative;
+  top: 35px;
+  width: 40px;
+  height: 40px;
+  float: right;
+  transition: all 0.3s ease-in-out;
+}
+#heder1 a.menu-trigger span,
+#heder1 a.menu-trigger span:before,
+#heder1 a.menu-trigger span:after {
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  background-color: white;
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  left: 0;
+}
+#heder1 a.menu-trigger span:before,
+#heder1 a.menu-trigger span:after {
+  content: "";
+}
+#heder1 a.menu-trigger span {
+  top: 10px;
+}
+#heder1 a.menu-trigger span:before {
+  -moz-transform-origin: 33% 100%;
+  -ms-transform-origin: 33% 100%;
+  -webkit-transform-origin: 33% 100%;
+  transform-origin: 33% 100%;
+  top: -10px;
+  z-index: 10;
+}
+#heder1 a.menu-trigger span:after {
+  -moz-transform-origin: 33% 0;
+  -ms-transform-origin: 33% 0;
+  -webkit-transform-origin: 33% 0;
+  transform-origin: 33% 0;
+  top: 10px;
+}
+#heder1 a.menu-trigger.active span,
+#heder1 a.menu-trigger.active span:before,
+#heder1 a.menu-trigger.active span:after {
+  background-color: transparent;
+}
+#heder1 a.menu-trigger.active span:before {
+  -moz-transform: translateY(4px) translateX(1px) rotate(45deg);
+  -ms-transform: translateY(4px) translateX(1px) rotate(45deg);
+  -webkit-transform: translateY(4px) translateX(1px) rotate(45deg);
+  transform: translateY(4px) translateX(1px) rotate(45deg);
+  background-color: white;
+}
+#heder1 a.menu-trigger.active span:after {
+  -moz-transform: translateY(-8px) translateX(1px) rotate(-45deg);
+  -ms-transform: translateY(-8px) translateX(1px) rotate(-45deg);
+  -webkit-transform: translateY(-8px) translateX(1px) rotate(-45deg);
+  transform: translateY(-8px) translateX(1px) rotate(-45deg);
+  background-color: white;
+}
+
+.hero2 {
+    background-image: url('../images/2.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    min-height: 80vh;
+    position: relative;
+  }
+.hero3 {
+    background-image: url('../images/1.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    min-height: 80vh;
+    position: relative;
+  }
+.hero4 {
+    background-image: url('../images/3.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    min-height: 80vh;
+    position: relative;
+  }
+.hero5 {
+    background-image: url('../images/5.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    min-height: 80vh;
+    position: relative;
+  }
