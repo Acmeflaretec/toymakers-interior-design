@@ -103,7 +103,8 @@ ul, li {
 	z-index: 9;
 }
 #Header.header-fixed {
-	background: rgba(0, 0, 0, 0.8);
+	background: #3F4A59;
+	/* background: rgba(0, 0, 0, 0.8); */
 	transition: all 0.3s ease-in-out;
 }
 #Header.header-fixed .site-logo-wrap {
@@ -111,7 +112,7 @@ ul, li {
 	transition: all 0.3s ease-in-out;
 }
 #Header.header-fixed .site-logo-wrap .logo img {
-	width: 70px;
+	width: 35%;
 	transition: all 0.3s ease-in-out;
 }
 #Header.header-fixed .main-menu {
@@ -712,7 +713,8 @@ ul, li {
 }
 
 #heder1{
-	background: rgba(0, 0, 0, 0.8);
+	background: #3F4A59;
+	/* background: rgba(0, 0, 0, 0.8); */
     transition: all 0.3s ease-in-out;
 	/* position: fixed;
     top: 0;
@@ -752,7 +754,7 @@ ul, li {
 #heder1 .site-logo-wrap .logo img {
 	display: inline-block;
 	vertical-align: middle;
-	width: 80px;
+	width: 35%;
 }
 #heder1 .main-menu {
 	width: 70%;

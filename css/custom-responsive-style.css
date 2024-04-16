@@ -364,4 +364,10 @@
   .hero6 {
     min-height: 50vh;
   }
+  #heder1 .site-logo-wrap .logo img {
+    width: 100%;
+  }
+  #heder1 a.menu-trigger {
+    top: 25px;
+  }
 }
