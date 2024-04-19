@@ -319,7 +319,7 @@ ul, li {
 	transition: all 0.3s ease-in-out;
 }
 /* services section style goes here */
-#Services {
+/* #Services {
 	padding: 80px 0 50px;
 	background-color: #fafafa;
 }
@@ -347,11 +347,11 @@ ul, li {
   border: 1px solid #e6e6e6;
   background-color: #fff;
   margin: 0 15px 50px;
-  padding: 55px 20px 25px;
+  padding: 100px 20px 25px;
 }
 #Services .each-service .service-icon {
 	position: absolute;
-	top: -30px;
+	top: 20px;
 	left: 50%;
 	transform: translateX(-50%);
 	padding: 15px;
@@ -378,6 +378,79 @@ ul, li {
 }
 #Services .each-service p:last-child {
 	margin: 0;
+} */
+
+#Services {
+    padding: 80px 0 50px;
+    background-color: #fafafa;
+}
+
+#Services .block-heading {
+    margin-bottom: 100px;
+}
+
+#Services .block-heading p:last-of-type {
+    margin: 0;
+}
+
+#Services .services-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+#Services .each-service {
+    position: relative;
+    text-align: center;
+    max-width: calc(33.33% - 30px);
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+    margin: 0 15px 50px;
+    padding: 100px 20px 25px;
+    transition: background-color 0.3s ease; /* Added transition for background color */
+	border-radius: 15px;
+}
+
+#Services .each-service:hover {
+    background-color: #0098aa; /* Change background color on hover */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+#Services .each-service .service-icon {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    background-color: #0098aa;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+#Services .each-service .service-icon i {
+    font-size: 24px;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+#Services .each-service:hover .service-icon {
+    background-color: #ffffff;
+    border: 1px solid #0098aa;
+    transition: all 0.2s ease-in-out;
+}
+
+#Services .each-service:hover .service-icon i {
+    color: #0098aa;
+    transition: all 0.2s ease-in-out;
+}
+
+#Services .each-service h5 {
+    margin: 0 0 10px;
+}
+
+#Services .each-service p:last-child {
+    margin: 0;
 }
 /* porfolio style goes here */
 #Portfolio {
@@ -466,7 +539,7 @@ ul, li {
 	position: absolute;
 	top: 0;
 	right: 0;
-	background: url("../images/toy.jpg") no-repeat center / cover;
+	background: url("../images/log1.png") no-repeat center / cover;
 	width: 50%;
 	height: 100%;
 }
@@ -713,7 +786,7 @@ ul, li {
 }
 
 #heder1{
-	background: #3F4A59;
+	background: #000000;
 	/* background: rgba(0, 0, 0, 0.8); */
     transition: all 0.3s ease-in-out;
 	/* position: fixed;
@@ -754,7 +827,7 @@ ul, li {
 #heder1 .site-logo-wrap .logo img {
 	display: inline-block;
 	vertical-align: middle;
-	width: 35%;
+	width: 70%;
 }
 #heder1 .main-menu {
 	width: 70%;
@@ -829,7 +902,7 @@ ul, li {
   cursor: pointer;
   position: relative;
   top: 35px;
-  width: 40px;
+  width: 52px;
   height: 40px;
   float: right;
   transition: all 0.3s ease-in-out;
@@ -925,4 +998,69 @@ ul, li {
     vertical-align: middle;
     min-height: 80vh;
     position: relative;
+  }
+
+
+  
+
+
+
+
+
+
+
+
+
+.photo-wrapper {
+	display: flex;
+	gap: 2rem;
+	padding: 2rem;
+	overflow: hidden;
+	width: 100%;
+  }
+  
+  .photo {
+	border-radius: 16px;
+	overflow: hidden;
+	width: 270px;
+	height: 382px;
+	position: relative;
+	flex-shrink: 0;
+	transition: transform 0.25s ease;
+  
+	& img {
+		width: inherit;
+		height: inherit;
+		object-fit: cover;
+	}
+  
+	&::after {
+		content: "";
+		position: absolute;
+		top: -1rem;
+		bottom: -1rem;
+		left: -16rem;
+		background: linear-gradient(90deg, transparent, white, transparent);
+		width: 16rem;
+		opacity: 0;
+		transform: rotate(6deg);
+	}
+  
+	&:hover::after {
+		left: 100%;
+		opacity: 0.15;
+		transition: inset 1s;
+	}
+  
+	&:hover {
+		transform: scale(1.1) !important;
+	}
+  
+	&.even {
+		transform: rotate(2deg);
+	}
+  
+	&:not(.even) {
+		transform: rotate(-2deg);
+	}
   }

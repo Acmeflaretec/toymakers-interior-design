@@ -370,4 +370,15 @@
   #heder1 a.menu-trigger {
     top: 25px;
   }
+  #heder1 .site-logo-wrap {
+    width: 45%;
+    margin: 15px;
+  }
+}
+@media (min-width: 767px) {
+  .navbar1 {
+    padding: 10px 90px 10px 22px;
+    display: flex;
+    align-items: center;
+  }
 }
