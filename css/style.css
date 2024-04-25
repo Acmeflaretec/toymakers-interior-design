@@ -28,6 +28,15 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+@font-face {
+    font-family: 'Parados';
+    src: url('path/to/parados.woff2') format('woff2'), /* Modern Browsers */
+         url('path/to/parados.woff') format('woff'); /* Legacy Browsers */
+    /* Add more src formats if needed */
+}
+
+
 a, a:hover, a:active, a:focus {
 	text-decoration: none;
 	outline: 0;
@@ -1063,4 +1072,23 @@ ul, li {
 	&:not(.even) {
 		transform: rotate(-2deg);
 	}
+  }
+  .designer{
+	background: #c2c2c2;
+	border-radius: 10px;
+  }
+  .text_div{
+	padding-left: 80px;
+  }
+  .leftQorts{
+	width: 55px;
+    position: absolute;
+    top: 52px;
+    left: 30px;
+  }
+  .rightQorts{
+	width: 55px;
+    position: relative;
+    bottom: 90px;
+    left: 1025px;
   }
