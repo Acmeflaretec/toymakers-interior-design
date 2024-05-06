@@ -102,19 +102,21 @@
         }
 
         .popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    max-width: 80%;
-    max-height: 80vh; /* Set maximum height to 80% of the viewport height */
-    overflow-y: auto; /* Enable vertical scrollbar when content overflows */
-}
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            max-width: 80%;
+            max-height: 80vh;
+            /* Set maximum height to 80% of the viewport height */
+            overflow-y: auto;
+            /* Enable vertical scrollbar when content overflows */
+        }
 
 
         .glide {
@@ -288,32 +290,75 @@
         <!-- Services section ends here -->
         <div class="container">
             <div class="block-heading mt-5">
-                <h2>Services</h2>
-                <p>Expert interior design for homes and businesses, tailored solutions.</p>
+                <h2>Commercial interior projects</h2>
+                <p>Transforming spaces with innovative designs for commercial interiors.</p>
             </div>
             <div class="service-boxes row">
-                <a style="margin-bottom: 15px;" class="box col-md-6 col-12" href="Commercial.html">
-                    <img class="img1" src="images/view-luxurious-hotel-interior-space.jpg">
-                    <div class="service-name " style="color: black;">Commercial interior projects
+                <div style="margin-bottom: 15px;" class="box col-md-6 col-12" onclick="showPopup('service1')">
+                    <img class="img1" src="images/restorents/abhishek 2.jpg" alt="Service 1">
+                    <div class="service-name">Abhishek Restaurent
                     </div>
-                </a>
-                <a style="margin-bottom: 15px;" class="box col-md-6 col-12" href="Residence.html">
-                    <img class="img1" src="images/3d-rendering-modern-dining-room-living-room-with-luxury-decor.jpg"
-                        >
-                    <div class="service-name" style="color: black;">Residence interior projects
+                </div>
+                <div style="margin-bottom: 15px;" class="box col-md-6 col-12" onclick="showPopup('service9')">
+                    <img class="img1" src="images/restorents/cleareye.ai6.jpg" alt="Service 9">
+                    <div class="service-name">Cleareye.Ai Technopark
                     </div>
-                </a>
-                <a style="margin-bottom: 15px;" class="box col-md-6 col-12" href="Cafe.html">
-                    <img class="img1" src="images/beautiful-kitchen-interior-design.jpg">
-                    <div class="service-name" style="color: black;">Cafe projects
+                </div>
+                
+                <div style="margin-bottom: 15px;" class="box col-md-6 col-12" onclick="showPopup('service3')">
+                    <img class="img1" src="images/restorents/delfish1.jpg" alt="Service 3">
+                    <div class="service-name">delfish fish mart
                     </div>
-                </a>
-                <a style="margin-bottom: 15px;" class="box col-md-6 col-12">
-                    <img class="img1"
-                        src="images/beautiful-view-mesmerizing-nature-traditional-styled-japanese-adelaide-himeji-gardens.jpg"
-                    >
-                    <div class="service-name" style="color: black;">Landscaping Projects</div>
-                </a>
+                </div>
+                <div style="margin-bottom: 15px;" class="box col-md-6 col-12" onclick="showPopup('service8')">
+                    <img class="img1" src="images/restorents/salwa 1.jpg" alt="Service 8">
+                    <div class="service-name">Salwa Dine Office Space
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 15px;" class="box col-md-6 col-12" onclick="showPopup('service5')">
+                    <img class="img1" src="images/restorents/horticorp1.jpg" alt="Service 5">
+                    <div class="service-name">Horticorp project
+                    </div>
+                </div>
+                <div style="margin-bottom: 15px;" class="box col-md-6 col-12" onclick="showPopup('service6')">
+                    <img class="img1" src="images/restorents/kunjikkante2.jpg" alt="Service 6">
+                    <div class="service-name">kunjikkante Peedika
+                    </div>
+                </div>
+                <div style="margin-bottom: 15px;" class="box col-md-6 col-12" onclick="showPopup('service7')">
+                    <img class="img1" src="images/restorents/old school3.jpg" alt="Service 7">
+                    <div class="service-name">Old School Tea
+                    </div>
+                </div>
+                <div style="margin-bottom: 15px;" class="box col-md-6 col-12" onclick="showPopup('service4')">
+                    <img class="img1" src="images/restorents/deumotion 5.jpg" alt="Service 4">
+                    <div class="service-name">Deumotion Dance Academy
+                    </div>
+                </div>               
+                
+                <div style="margin-bottom: 15px;" class="box col-md-6 col-12" onclick="showPopup('service11')">
+                    <img class="img1" src="images/restorents/green1.jpg" alt="Service 11">
+                    <div class="service-name">Green Olive Restaurant
+                    </div>
+                </div>
+                <div style="margin-bottom: 15px;" class="box col-md-6 col-12" onclick="showPopup('service20')">
+                    <img class="img1" src="images/restorents/DR FACE DENTAL1.jpg" alt="Service 20">
+                    <div class="service-name">DR FACE DENTAL CLINIC
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 15px;" class="box col-md-6 col-12" onclick="showPopup('service2')">
+                    <img class="img1" src="images/restorents/brandclub 1.jpg" alt="Service 2">
+                    <div class="service-name">Brandclub Surplus Store
+                    </div>
+                </div>
+                <div style="margin-bottom: 15px;" class="box col-md-6 col-12" onclick="showPopup('service10')">
+                    <img class="img1" src="images/restorents/talent orange1.jpg" alt="Service 10">
+                    <div class="service-name">Talent Orange Academy
+                    </div>
+                </div>
+                
             </div>
         </div>
 
