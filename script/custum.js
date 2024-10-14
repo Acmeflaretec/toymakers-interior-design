@@ -86,6 +86,7 @@ function showPopup(serviceName) {
         'service17': ['images/restorents/MRS SANJANA1.jpg', 'images/restorents/MRS SANJANA2.jpg', 'images/restorents/MRS SANJANA3.jpg', 'images/restorents/MRS SANJANA4.jpg','images/restorents/MRS SANJANA5.jpg'],
         'service18': ['images/restorents/MR SHAHUL1.jpg', 'images/restorents/MR SHAHUL2.jpg', 'images/restorents/MR SHAHUL3.jpg', 'images/restorents/MR SHAHUL4.jpg','images/restorents/MR SHAHUL5.jpg','images/restorents/MR SHAHUL6.jpg'],
         'service19': ['images/restorents/SUMESH KOVALAM1.jpg', 'images/restorents/SUMESH KOVALAM2.jpg', 'images/restorents/SUMESH KOVALAM3.jpg', 'images/restorents/SUMESH KOVALAM4.jpg','images/restorents/SUMESH KOVALAM5.jpg'],
+        'service21': ['images/New/IMG_7668.jpg', 'images/New/IMG_7667.jpg', 'images/New/IMG_7669.jpg', 'images/New/IMG_7651.jpg','images/New/IMG_7649.jpg','images/New/IMG_7643.jpg','images/New/IMG_7625.jpg','images/New/IMG_7621.jpg'],
         
     };
 
