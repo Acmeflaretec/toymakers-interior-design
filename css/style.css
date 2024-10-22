@@ -13670,6 +13670,11 @@ li {
 	text-transform: uppercase;
 	margin: 0 0 20px;
 }
+#HeroBanner .hero-content h2 {
+	font-size: 48px;
+	color: #fff;
+	margin: 0 0 20px;
+}
 
 #HeroBanner .hero-content p {
 	font-size: 28px;
